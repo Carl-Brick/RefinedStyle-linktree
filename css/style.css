@@ -1,0 +1,10 @@
+/* Instagram Linktree style */
+body {
+  background: lightgreen;
+}
+
+/* header */
+h1 {
+  font-size: 6vw;
+  text-align: center;
+}

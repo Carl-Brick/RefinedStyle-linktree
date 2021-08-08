@@ -1,0 +1,12 @@
+/* Instagram Linktree grid */
+.grid {
+  display: grid;
+  grid-template-columns: 4vw repeat(4, 1fr) 4vw;
+  grid-template-rows: 4vw 300px repeat(autofit, 200px) 4vw;
+  grid-gap: 10px;
+}
+
+header {
+  grid-column: 2/6;
+  grid-row: 2/3;
+}
