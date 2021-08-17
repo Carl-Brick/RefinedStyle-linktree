@@ -1,12 +1,56 @@
 /* Instagram Linktree grid */
 .grid {
   display: grid;
-  grid-template-columns: 4vw repeat(4, 1fr) 4vw;
-  grid-template-rows: 4vw 300px repeat(autofit, 200px) 4vw;
+  grid-template-columns: 4vw repeat(3, auto) 4vw;
+  grid-template-rows: 1vw auto auto auto
+    /*repeat(autofit, 200px)*/
+    auto;
   grid-gap: 10px;
 }
 
 header {
-  grid-column: 2/6;
+  grid-column: 1/6;
   grid-row: 2/3;
+}
+
+/* Affiliate Links */
+.affLink {
+  grid-column: 2/ span 3;
+  grid-row: 3/4;
+}
+
+section {
+  grid-column: 2/ span 3;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+
+/* Footer */
+footer {
+  grid-column: 2/ span 3;
+  grid-row: 5/6;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  /* Headers */
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  /* Affiliate Links */
+  section {
+    grid-column: 1/6;
+  }
+
+  /* Footer */
+  footer {
+    grid-column: 1/6;
+  }
 }
